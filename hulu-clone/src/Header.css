@@ -4,13 +4,35 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    overflow-x: scroll;
+}
+
+/* Hide header scrollbar for browser */
+.header::-webkit-scrollbar {
+    display: none;
 }
 
 .header_icon > .MuiSvgIcon-root {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.header_icon--active > p {
+    display: inline-flex !important;
+}
+
+.header_icon:hover > p {
+    display: inline-flex;
+}
+
+.header_icon > p {
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
 }
 
 .header_icon {
